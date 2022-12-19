@@ -1,0 +1,52 @@
+<script> 
+class Calculator{
+	constructor()
+	{
+		//data part
+		this.a=0;
+		this.b=0;
+		this.result=0;
+	}
+	//function part
+	add(num1,num2)
+	{
+		this.a=num1;
+		this.b=num2;
+		return this.a+this.b;
+	}
+	subtract(num1,num2)
+	{
+		this.a=num1;
+		this.b=num2;
+		return this.a-this.b;
+	}
+
+	divide(num1,num2)
+	{
+		this.a=num1;
+		this.b=num2;
+		return this.a/this.b;
+	}
+
+}
+//make object
+
+let calc1=new Calculator();
+
+let r1=calc1.add(10,10);
+
+
+document.write("Addition:"+r1);
+
+let r2=calc1.subtract(100,10);
+
+document.write("<br/>Subtraction:"+r2);
+
+let r3=calc1.divide(50,500);
+
+document.write("<br/>Divide:"+r3);
+
+
+
+
+</script>

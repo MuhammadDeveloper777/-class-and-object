@@ -1,0 +1,46 @@
+<script type="text/javascript">
+	//Write Month name to Month number converter
+
+	// Define Part
+
+	class monthConverter{
+				constructor(m)
+				{
+					this.month=m;
+				}
+				convert()
+				{
+					switch(this.month)
+					{
+						case "Jan":
+							return 1;
+							break;
+
+						case "Feb":
+							return 2;
+							break;
+
+						case "March":
+							return 3;
+							break;
+
+						case "April":
+							return 4;
+							break;
+
+						case "May":
+							return 5;
+							break;
+
+						default:
+						return "Wrong Name Enter";	
+					}
+				}
+	}
+
+	// Call Part
+	let m=prompt("Enter Month Name");
+	let mname=new monthConverter(m)
+	let mnumber=mname.convert();
+	document.write(mnumber);
+</script>

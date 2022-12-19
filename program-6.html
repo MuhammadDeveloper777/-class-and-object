@@ -1,0 +1,46 @@
+<script type="text/javascript">
+	//Write Month name to Month number converter
+
+	// Define Part
+
+	class weekConverter{
+				constructor(w)
+				{
+					this.week=Number(w);
+				}
+				convert()
+				{
+					switch(this.week)
+					{
+						case 1:
+							return "Week1";
+							break;
+
+						case 2:
+							return "Week2";
+							break;
+
+						case 3:
+							return "Week3";
+							break;
+
+						case 4:
+							return "Week4";
+							break;
+
+						case 5:
+							return "Week5";
+							break;
+
+						default:
+						return "Wrong Name Enter";	
+					}
+				}
+	}
+
+	// Call Part
+	let w=prompt("Enter Week Name");
+	let wNumber=new weekConverter(w);
+	let wName=wNumber.convert();
+	document.write(wName);
+</script>
